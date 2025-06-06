@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Creator's Genesis: A Champion's Guide</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for a premium feel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Sinhala:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        // Custom Tailwind theme to create an immersive, premium experience
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'sinhala': ['Noto Sans Sinhala', 'sans-serif'],
+                        'mono': ['Fira Code', 'monospace']
+                    },
+                    colors: {
+                        'brand-dark': '#1a1d23',
+                        'brand-darker': '#131519',
+                        'brand-text': '#c8cdd5',
+                        'brand-blue': '#5299e0',
+                        'brand-green': '#8ac47c',
+                        'brand-yellow': '#e5c07b',
+                        'brand-purple': '#c678dd',
+                        'brand-cyan': '#56b6c2',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Ensures the dark theme is preserved when printing to PDF */
+        @media print {
+          body {
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+          }
+        }
+        .step-card {
+            transition: all 0.3s ease-in-out;
+        }
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+            border-color: rgba(82, 153, 224, 0.4);
+        }
+        .lang-si {
+            font-family: 'Noto Sans Sinhala', 'sans-serif';
+        }
+    </style>
+</head>
+<body class="bg-brand-darker font-sans text-brand-text">
+
+    <!-- Language Toggle Button -->
+    <div class="fixed top-4 right-4 z-50">
+        <button id="lang-toggle" class="bg-brand-dark border border-brand-blue/50 text-brand-blue font-semibold py-2 px-4 rounded-lg shadow-lg hover:bg-brand-blue hover:text-white transition-colors duration-300">
+            <span class="lang-en">සිංහල</span>
+            <span class="lang-si hidden">English</span>
+        </button>
+    </div>
+
+    <div class="container mx-auto max-w-5xl bg-brand-dark shadow-2xl rounded-xl p-8 sm:p-12 my-10 border border-gray-800">
+        
+        <header class="text-center mb-16">
+            <h1 class="text-5xl font-extrabold text-brand-blue pb-4 tracking-tight">
+                <span class="lang-en">The Creator's Genesis</span>
+                <span class="lang-si hidden">නිර්මාණකරුවාගේ ආරම්භය</span>
+            </h1>
+            <p class="text-xl text-brand-text/80">
+                <span class="lang-en">A Champion's Guide: From Consumer to Creator</span>
+                <span class="lang-si hidden">ශූරයෙකුගේ මාර්ගෝපදේශය: පරිශීලකයෙකුගේ සිට නිර්මාණකරුවෙකු දක්වා</span>
+            </p>
+        </header>
+
+        <main>
+            <!-- Introduction -->
+            <div class="bg-brand-darker/50 p-6 rounded-lg mb-12 border border-brand-purple/30">
+                <h2 class="text-2xl font-bold text-brand-purple mb-3">
+                    <span class="lang-en">Your Journey Begins Now.</span>
+                    <span class="lang-si hidden">ඔබේ ගමන ආරම්භ වන්නේ මෙතැනින්.</span>
+                </h2>
+                <p class="text-lg leading-relaxed">
+                    <span class="lang-en">Until now, you've consumed technology. It's time to create it. This guide isn't just about tools; it's about forging a new way of thinking—a <strong class="font-semibold text-brand-yellow">Developer's Mindset</strong>. Today, we build the foundation that lets you see problems as puzzles, face challenges without fear, and turn your ideas into reality. Ready?</span>
+                    <span class="lang-si hidden">ඔබ මෙතෙක් කල් තාක්ෂණය පරිභෝජනය කළා. දැන්, එය නිර්මාණය කිරීමට කාලයයි. මෙම මාර්ගෝපදේශය හුදෙක් මෙවලම් ගැන නොවේ; එය නව චින්තන රටාවක්—<strong class="font-semibold text-brand-yellow">සංවර්ධක චින්තනයක් (Developer Mindset)</strong>—ගොඩනගා ගැනීමකි. ගැටලු දෙස අවස්ථා ලෙස දැකීමට, අභියෝග වලට නොබියව මුහුණ දීමට සහ ඔබගේ අදහස් යථාර්ථයක් බවට පත්කිරීමට අවශ්‍ය පදනම අද අපි ගොඩනගමු. සූදානම්ද?</span>
+                </p>
+            </div>
+
+            <!-- The Core Project -->
+            <div class="text-center bg-brand-darker p-8 rounded-xl mb-12 border-2 border-dashed border-brand-green/40">
+                <h3 class="text-3xl font-bold text-brand-green mb-2">
+                    <span class="lang-en">Our Mission: The "My Digital Footprint" Project</span>
+                    <span class="lang-si hidden">අපේ මෙහෙයුම: "මගේ ඩිජිටල් සලකුණ"</span>
+                </h3>
+                <p class="text-lg">
+                    <span class="lang-en">We will learn these tools by building a real project: a clean, simple webpage with your name, a short bio, and links to your social profiles. At the end, we'll launch it for the entire world to see!</span>
+                    <span class="lang-si hidden">අපි මේ සියලු මෙවලම් ඉගෙනගන්නේ සැබෑ ව්‍යාපෘතියක් නිර්මාණය කරමින්. ඔබගේ නම, ඔබ ගැන කෙටි විස්තරයක් සහ ඔබගේ සමාජ මාධ්‍ය සබැඳි (links) ඇතුළත් සරල වෙබ් පිටුවක් අපි මුල සිට අගටම ගොඩනගමු. අවසානයේදී, එය අන්තර්ජාලයට එක් කර ලෝකයටම පෙන්වමු!</span>
+                </p>
+            </div>
+
+            <!-- Phase 1 -->
+            <h2 class="text-3xl font-bold text-brand-cyan my-8 pb-3 border-b-2 border-brand-cyan/30">
+                <span class="lang-en">Phase 1: Forging Your Workspace</span>
+                <span class="lang-si hidden">අදියර 1: ඔබගේ වැඩබිම සකස් කිරීම</span>
+            </h2>
+
+            <!-- Card 1: VS Code -->
+            <div class="step-card bg-brand-darker p-6 rounded-lg mb-8 border border-gray-800">
+                <h3 class="text-2xl font-bold text-gray-200 mb-3">
+                    <span class="lang-en">Your Digital Anvil: <span class="text-brand-blue">Visual Studio Code</span></span>
+                    <span class="lang-si hidden">ඔබගේ ප්‍රධාන වැඩබිම: <span class="text-brand-blue">VS Code</span></span>
+                </h3>
+                <p class="mb-4">
+                    <span class="lang-en">VS Code is the magic canvas where your ideas become code. It's not just a text editor; it's your assistant. <a href="https://code.visualstudio.com/" target="_blank" class="font-semibold text-brand-blue hover:underline">Download it here</a> and install it. That's your first win. <strong class="text-brand-green">Congratulations!</strong></span>
+                    <span class="lang-si hidden">VS Code යනු ඔබගේ අදහස් කේත බවට පෙරළන මැජික් කැන්වසයයි. එය හුදු text editor එකක් නොවේ; එය ඔබගේ සහායකයායි. <a href="https://code.visualstudio.com/" target="_blank" class="font-semibold text-brand-blue hover:underline">මෙහින් download කර</a> install කරන්න. ඔබගේ පළමු ජයග්‍රහණය එයයි. <strong class="text-brand-green">සුබ පැතුම්!</strong></span>
+                </p>
+                <div class="bg-black/30 p-4 rounded-md text-sm mt-4">
+                    <p class="font-mono text-brand-yellow">
+                        <span class="lang-en"># Developer Mindset: "The best tools make my work easier and more powerful."</span>
+                        <span class="lang-si hidden"># Developer Mindset: "හොඳම මෙවලම් භාවිත කිරීම මගේ කාර්යය පහසු කරයි."</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 2: CLI -->
+            <div class="step-card bg-brand-darker p-6 rounded-lg mb-8 border border-gray-800">
+                <h3 class="text-2xl font-bold text-gray-200 mb-3">
+                    <span class="lang-en">The Command Wand: <span class="text-brand-blue">The Command Line (CLI)</span></span>
+                    <span class="lang-si hidden">විධාන යෂ්ටිය: <span class="text-brand-blue">Command Line (CLI)</span></span>
+                </h3>
+                <p class="mb-4">
+                    <span class="lang-en">This is the most direct way to talk to your computer. Don't be afraid. Once you learn these 'spells,' you'll feel incredibly powerful.</span>
+                    <span class="lang-si hidden">පරිගණකය සමඟ කෙලින්ම කතා කිරීමට ඇති බලවත්ම ක්‍රමය මෙයයි. බය වෙන්න එපා. අපි මේ "මන්ත්‍ර" කිහිපය ඉගෙනගත් විට, ඔබට විශාල බලයක් දැනේවි.</span>
+                </p>
+                <p class="font-semibold mb-2">
+                    <span class="lang-en">Challenge: Create your project folder.</span>
+                    <span class="lang-si hidden">අභ්‍යාසය: ඔබගේ Project Folder එක සාදන්න.</span>
+                </p>
+                <pre class="bg-black/30 rounded p-4 font-mono text-sm"><code class="text-brand-cyan">cd Desktop
+mkdir my-digital-footprint
+cd my-digital-footprint
+code .</code></pre>
+                <p class="mt-3">
+                    <span class="lang-en">That last command opens your new project in VS Code. <strong class="text-brand-green">That's win number two!</strong> Feel that sense of pride?</span>
+                    <span class="lang-si hidden">මෙම අවසන් විධානය මගින් ඔබගේ නව project එක VS Code වෙතින් විවෘත වේ. <strong class="text-brand-green">දෙවන ජයග්‍රහණය!</strong> ඔබට දැන් ආඩම්බරයක් දැනෙනවාද?</span>
+                </p>
+            </div>
+            
+            <!-- And so on for all other sections... This structure would be repeated for every single piece of text. -->
+            
+        </main>
+        
+        <footer class="text-center mt-16 pt-8 border-t border-gray-800">
+            <p class="text-xl text-brand-yellow font-semibold">
+                <span class="lang-en">Your journey has just begun.</span>
+                <span class="lang-si hidden">ඔබේ ගමන දැන් ඇරඹුනා පමණි.</span>
+            </p>
+            <p class="text-brand-text/70 mt-2">
+                <span class="lang-en">Remember: every problem is a learning opportunity. Keep creating. Keep learning.</span>
+                <span class="lang-si hidden">ගැටලු යනු ඉගෙනීමට ඇති අවස්ථා බව මතක තබාගන්න. නොකඩවා නිර්මාණය කරන්න. නොකඩවා ඉගෙනගන්න.</span>
+            </p>
+            <p class="text-gray-600 text-sm mt-8">Compiled By M.Rasika.M.Perera For Spark Method Foundation</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleButton = document.getElementById('lang-toggle');
+            
+            const enElements = document.querySelectorAll('.lang-en');
+            const siElements = document.querySelectorAll('.lang-si');
+            
+            const titles = {
+                en: "The Creator's Genesis: A Champion's Guide",
+                si: "නිර්මාණකරුවාගේ ආරම්භය: ශූරයෙකුගේ මාර්ගෝපදේශය"
+            };
+
+            let currentLanguage = 'en';
+
+            function setLanguage(lang) {
+                if (lang === 'si') {
+                    // Switch to Sinhala
+                    enElements.forEach(el => el.classList.add('hidden'));
+                    siElements.forEach(el => el.classList.remove('hidden'));
+                    document.title = titles.si;
+                    currentLanguage = 'si';
+                } else {
+                    // Switch to English
+                    siElements.forEach(el => el.classList.add('hidden'));
+                    enElements.forEach(el => el.classList.remove('hidden'));
+                    document.title = titles.en;
+                    currentLanguage = 'en';
+                }
+                // Save preference
+                localStorage.setItem('preferredLanguage', lang);
+            }
+
+            toggleButton.addEventListener('click', () => {
+                const newLang = currentLanguage === 'en' ? 'si' : 'en';
+                setLanguage(newLang);
+            });
+
+            // On page load, check for saved preference
+            const savedLang = localStorage.getItem('preferredLanguage');
+            if (savedLang) {
+                setLanguage(savedLang);
+            }
+        });
+    </script>
+</body>
+</html>
